@@ -1,22 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
+html {
+    box-sizing: border-box;
 }
 
-body {
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
     font-size: 16px;
-    background-color: #fff;
+    background: #fff;
 }
 
 #adv {
     display: block;
-}
-
-#ad-img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
 }
 
+#adv-img {
+    width: 100%;
+}
 
 .container {
+    position: relative;
+    width: 970px;
     padding: 15px 10px 10px;
+    background-color: #fff;
+    margin: 220px auto 0;
+    box-shadow: 0 0 7px 10px #fff;
+}
+
+.site-header h1 {
+    margin: 0;
 }
